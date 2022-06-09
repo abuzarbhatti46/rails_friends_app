@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+<div class = "jumbotron bg-light ps-3 pb-3">
+<h1 class = "display-6"> 
+<%= @friend.first_name%> 
+<%= @friend.last_name%> 
+</h1>
+<br/>
+<p style = "font-size:14px">
+<%= @friend.email%> <br/>
+<%= @friend.phone%> <br/>
+<%= @friend.twitter%> <br/>
+ </p>
+
+   <%= link_to "Edit", edit_friend_path(@friend) class: "btn btn-primary"%> |
+  <%= link_to "Back", friends_path class: "btn btn-primary" %>
+</div>
+<%# <%= render @friend %>
+
+<%# <div>
+  <%= button_to "Destroy this friend", @friend, method: :delete %>
+<%# </div>  %>
+ 
